@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>下载中心</title>
+<style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+        font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+        background: linear-gradient(180deg, #e8f4fd 0%, #d6eaf8 100%);
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+    .box {
+        background: white;
+        border-radius: 16px;
+        padding: 40px 30px;
+        max-width: 420px;
+        width: 100%;
+        box-shadow: 0 8px 32px rgba(52, 152, 219, 0.15);
+        text-align: center;
+    }
+    .logo { font-size: 64px; margin-bottom: 16px; }
+    h1 { font-size: 24px; color: #2c3e50; margin-bottom: 6px; }
+    .sub { font-size: 13px; color: #95a5a6; margin-bottom: 32px; }
+    .dl {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        color: white;
+        padding: 20px 24px;
+        border-radius: 12px;
+        text-decoration: none;
+        margin-bottom: 14px;
+        transition: all 0.2s;
+    }
+    .dl:hover { transform: translateY(-3px); }
+    .dl .icon { font-size: 32px; }
+    .dl .info { flex: 1; text-align: left; }
+    .dl .name { font-size: 16px; font-weight: bold; }
+    .dl .desc { font-size: 12px; opacity: 0.9; margin-top: 3px; }
+    .dl .arrow { font-size: 24px; }
+    .dl.main {
+        background: linear-gradient(135deg, #27ae60, #2ecc71);
+        box-shadow: 0 4px 16px rgba(39, 174, 96, 0.3);
+    }
+    .dl.main:hover { box-shadow: 0 10px 28px rgba(39, 174, 96, 0.45); }
+    .dl.paint {
+        background: linear-gradient(135deg, #f39c12, #f5b041);
+        box-shadow: 0 4px 16px rgba(243, 156, 18, 0.3);
+    }
+    .dl.paint:hover { box-shadow: 0 10px 28px rgba(243, 156, 18, 0.45); }
+    .footer { margin-top: 24px; font-size: 11px; color: #bdc3c7; }
+</style>
+</head>
+<body>
+
+<div class="box">
+    <div class="logo">📦</div>
+    <h1>下载中心</h1>
+    <div class="sub">v1.0.0 · Windows</div>
+    
+    <a href="REPLACE_LINK_1" download class="dl main">
+        <span class="icon">📚</span>
+        <span class="info">
+            <div class="name">作业打卡器</div>
+            <div class="desc">主程序 + 拓展程序</div>
+        </span>
+        <span class="arrow">⬇</span>
+    </a>
+    
+    <a href="REPLACE_LINK_2" download class="dl paint">
+        <span class="icon">🎨</span>
+        <span class="info">
+            <div class="name">画笔</div>
+            <div class="desc">简单的画图工具</div>
+        </span>
+        <span class="arrow">⬇</span>
+    </a>
+    
+    <div class="footer">📦 让工具更简单</div>
+</div>
+
+</body>
+</html>
